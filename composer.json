@@ -1,0 +1,43 @@
+{
+  "require": {
+    "fzaninotto/faker": "~1.7",
+    "laravel/dusk": "^2.0",
+    "mockery/mockery": "~1.0",
+    "phpunit/phpunit": "~6.5",
+    "spatie/laravel-db-snapshots": "^1.2"
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "replace": {
+    "laravel/framework": "5.5.*",
+    "illuminate/auth": "5.5.*",
+    "illuminate/broadcasting": "5.5.*",
+    "illuminate/bus": "5.5.*",
+    "illuminate/cache": "5.5.*",
+    "illuminate/config": "5.5.*",
+    "illuminate/console": "5.5.*",
+    "illuminate/container": "5.5.*",
+    "illuminate/contracts": "5.5.*",
+    "illuminate/cookie": "5.5.*",
+    "illuminate/database": "5.5.*",
+    "illuminate/encryption": "5.5.*",
+    "illuminate/events": "5.5.*",
+    "illuminate/filesystem": "5.5.*",
+    "illuminate/hashing": "5.5.*",
+    "illuminate/http": "5.5.*",
+    "illuminate/log": "5.5.*",
+    "illuminate/mail": "5.5.*",
+    "illuminate/notifications": "5.5.*",
+    "illuminate/pagination": "5.5.*",
+    "illuminate/pipeline": "5.5.*",
+    "illuminate/queue": "5.5.*",
+    "illuminate/redis": "5.5.*",
+    "illuminate/routing": "5.5.*",
+    "illuminate/session": "5.5.*",
+    "illuminate/support": "5.5.*",
+    "illuminate/translation": "5.5.*",
+    "illuminate/validation": "5.5.*",
+    "illuminate/view": "5.5.*"
+  }
+}
