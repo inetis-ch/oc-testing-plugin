@@ -3,13 +3,24 @@
 namespace Inetis\Testing\Tests;
 
 use Illuminate\Contracts\Auth\Authenticatable as UserContract;
+use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+use Inetis\Testing\Classes\ReloadProvidersMiddleware;
 
 abstract class TestCase extends BaseTestCase
 {
     use CreatesApplication;
     use DatabaseTransactions;
+
+    protected function setUp()
+    {
+        parent::setUp();
+
+        $this->app->make(Kernel::class)->prependMiddleware(
+            ReloadProvidersMiddleware::class
+        );
+    }
 
     /**
      * Set the currently logged in user for the application.
